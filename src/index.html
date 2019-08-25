@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- 
+        Para centrar mi contenido uso el *container*
+     -->
+    <header>
+        <div class="container">
+            <!-- la class container centra todo el texto
+        tambien esta la clase container-fluid que hara que el texto se vaya a la izquierda
+        -->
+            <h1>Header</h1>
+
+        </div>
+    </header>
+    <!--Estan las secciones, los articulos y los textos (p), tambien un aside con su texto.
+
+        Con la clase "row" agrego filas, de este modo dejo todo lo que esta en esta section
+    como una sola fila. Las filas son horizontales.
+        Para que los dos parrafos queden uno al lado del otro debo ubicarlos como columnas(son
+    verticales), usando el "col".
+    Existen diferentes col dependiendo el dispositivo: col xs (celulares), col sm (mobiles y tablets),
+    col md(tabletas grandes en formato horizontal), col lg (desktop).
+
+    Una caracteristica al escribir las col esque si no colocas el valor de las de la derecha, se asume
+    que son el mismo valor de la ultima que ingresaste. Ejemplo: col-xs-12 col-sm-8, 
+    aqui se lee que col-md y col-lg seran 8 (ya que este fue el ultimo valor ingresado).
+
+    En mi codigo de article class podria quedar asi: col-xs-12 col-sm-8 col-md-9 y 
+    col-xs-12 col-sm-4 col-md-3 respectivamente o bien col-md-9 y col-md-3.
+
+    Con esto escribo varias cosas al mismo tiempo: .col-md3*4
+    Con col-md-offset-(y el numero que escoga) desplaza las columnas hacia la derecha
+-->
+    <div class="container">
+        <section class="main row">
+            <article class="col-xs-12 col-sm-8 col-md-9 col-lg-9">
+                <p>
+                    <h3>Article</h3>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum assumenda temporibus nobis modi,
+                    voluptate velit facere in mollitia suscipit. Neque, minima et. Delectus error cupiditate in,
+                    vero soluta accusantium voluptas.
+                </p>
+            </article>
+
+            <aside class="col-xs-12 col-sm-4 col-md-3 col-lg-3">
+                <p>
+                    <h3>Aside</h3>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis non expedita, voluptas saepe
+                    accusantium
+                    quod nobis ut tempore consequatur aliquid sunt laudantium maiores vero officiis, quae odit quasi,
+                    facere
+                    beatae.
+                </p>
+            </aside>
+        </section>
+
+        <div class="row">
+            <div class="color1 col-xs-12 col-sm-6 col-md-3">
+                <p>
+                    <h3>Columna</h3>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias inventore similique deserunt in
+                    incidunt modi quae sint quidem. Odio veritatis aspernatur eligendi nesciunt eius et earum dolorem
+                    ullam quidem aliquid.
+                </p>
+                <!-- Ejemplo de parrafo extra 
+                    <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias inventore similique deserunt in
+                    incidunt modi quae sint quidem. Odio veritatis aspernatur eligendi nesciunt eius et earum dolorem
+                    ullam quidem aliquid.</p> -->
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-3">
+                <p>
+                    <h3>Columna</h3>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias inventore similique deserunt in
+                    incidunt modi quae sint quidem. Odio veritatis aspernatur eligendi nesciunt eius et earum dolorem
+                    ullam quidem aliquid.
+                </p>
+            </div>
+            <div class="color1 col-xs-12 col-sm-6 col-md-3">
+                <p>
+                    <h3>Columna</h3>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias inventore similique deserunt in
+                    incidunt modi quae sint quidem. Odio veritatis aspernatur eligendi nesciunt eius et earum dolorem
+                    ullam quidem aliquid.
+                </p>
+
+            </div>
+
+
+            <!--Para corregir errores en el espacio de las columnas al mostrarlas en el navegador
+            por ser de dirente tamano, uso esta clase
+            <div class="clearfix visible-sm-block"></div>
+            -->
+                     
+                <div class="col-xs-12 col-sm-6 col-md-3">
+                <p>
+                    <h3>Columna</h3>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias inventore similique deserunt in
+                    incidunt modi quae sint quidem. Odio veritatis aspernatur eligendi nesciunt eius et earum dolorem
+                    ullam quidem aliquid.
+                </p>
+            </div>
+        </div>
+   
+    </div>
+
+    <footer>
+            <div class="container">
+            <h3>Denisse Ferreira</h3>
+        </div>
+        </footer>
+
+   
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
